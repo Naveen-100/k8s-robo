@@ -1,0 +1,8 @@
+change mongo url server.js --> mongo-service
+docker build -t naveen2809/catalogue:k8s .
+docker push naveen2809/catalogue:k8s
+
+check communitcation between catalogue & mongo
+kubectl logs -f catalogue // we can see msg MongoDB connected
+kubectl exec -it catalogue -- bash
+ping mongo-service
