@@ -1,0 +1,7 @@
+echo -n shipping | base64 
+c2hpcHBpbmc=
+echo -n secret | base64
+c2VjcmV0
+
+docker build -t naveen2809/mysql:k8s .
+docker push naveen2809/mysql:k8s

@@ -1,0 +1,16 @@
+change sevice name
+
+catalogue
+creating config map with mongo url
+
+mysql 
+created config map, secrets  with env variables
+
+redis
+
+user // make sure service name should be users
+created configmap with redis host, mongo host
+
+output :: able create user & login
+
+git add .;git commit -m "3";git push origin master;
