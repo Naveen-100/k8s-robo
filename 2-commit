@@ -14,3 +14,5 @@ if load balancer taking long time
 kubectl get svc // copy port
 open port from inbound 
 # external ip : port number
+
+output :: we are able to see Categories on webpage

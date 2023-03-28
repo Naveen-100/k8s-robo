@@ -6,3 +6,5 @@ alias gs='kubectl get svc'
 alias gsw='kubectl get svc -o wide'
 
 Added web as static site by changing default.conf without proxy
+
+output :: weare able to see webpage only
