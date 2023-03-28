@@ -1,0 +1,8 @@
+alias a='kubectl apply -f manifest.yaml'
+alias d='kubectl delete -f manifest.yaml'
+alias gp='kubectl get pods'
+alias gpw='kubectl get pods -o wide'
+alias gs='kubectl get svc'
+alias gsw='kubectl get svc -o wide'
+
+Added web as static site by changing default.conf without proxy

@@ -1,0 +1,7 @@
+docker build -t naveen2809/web:k8s .
+docker push naveen2809/web:k8s
+kubectl exec -it web -- bash
+curl localhost:80
+exit
+kubectl get svc -o wide 
+a02769dbaba7c4a9b9c51e026d921a16-1240075023.ap-south-1.elb.amazonaws.com
