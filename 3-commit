@@ -13,4 +13,4 @@ created configmap with redis host, mongo host
 
 output :: able create user & login
 
-git add .;git commit -m "3";git push origin master;
+git add .;git commit -m "5";git push origin master;

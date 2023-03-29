@@ -16,5 +16,7 @@ cd ../cart
 a
 cd ../shipping
 a
+cd ../payment
+a
 cd ../web
 a
