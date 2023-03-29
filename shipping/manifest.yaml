@@ -1,0 +1,36 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shipping-config
+data:
+  CART_ENDPOINT: "cart:8080"
+  DB_HOST: "mysql"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: shipping
+  labels:
+    name: shipping
+    tier: app
+spec:
+  containers:
+  - name: shipping
+    image: naveen2809/shipping:v1
+    imagePullPolicy: Always
+    envFrom:
+      - configMapRef:
+          name: shipping-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: shipping
+spec:
+  selector:
+    name: shipping
+    tier: app
+  ports:
+  - port: 8080
+    targetPort: 8080

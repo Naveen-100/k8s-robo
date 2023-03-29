@@ -1,0 +1,20 @@
+```
+cd shop
+cd mongo 
+a
+cd ../redis
+a
+cd ../rabbitmq
+a
+cd ../mysql
+a
+cd ../catalogue
+a
+cd ../user
+a
+cd ../cart
+a
+cd ../shipping
+a
+cd ../web
+a

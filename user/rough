@@ -1,2 +1,5 @@
+update url for mongodb
 docker build -t naveen2809/user:k8s .
 docker push naveen2809/user:k8s
+
+create service with users only bcs it depency in server.js

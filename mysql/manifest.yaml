@@ -4,8 +4,8 @@ kind: ConfigMap
 metadata:
   name: mysql-config
 data:
-  MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
   MYSQL_DATABASE: "cities"
+  MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
 ---
 apiVersion: v1
 kind: Secret
@@ -27,7 +27,7 @@ spec:
   containers:
   - name: mysql
     imagePullPolicy: Always
-    image: naveen2809/mysql:k8s
+    image: naveen2809/mysql:v1
     envFrom:
     - configMapRef:
         name: mysql-config
@@ -45,6 +45,6 @@ spec:
     name: mysql
     tier: db
   ports:
-  - port: 3306
-    targetPort: 3306
----
+    - protocol: TCP
+      port: 3306
+      targetPort: 3306

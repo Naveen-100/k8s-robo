@@ -1,0 +1,2 @@
+docker build -t naveen2809/shipping:k8s .
+docker push naveen2809/shipping:k8s
